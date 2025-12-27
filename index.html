@@ -1,53 +1,55 @@
 <!DOCTYPE html>
 <html lang="ru">
+<link rel="stylesheet" href="styles.css">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=!, initial-scale=1.0">
     <title>Магазин кофе</title>
 </head>
 <body>
-    <header>
-        <h1>Ваш личный кофе</h1>
+    <header class="header">
+        <h1 class="header__logo">ВАШ <span class="header__logo--special">ЛУЧШИЙ</span> КОФЕ</h1>
         <img src="assets/img/banner.png" alt="Баннер главной страницы">
-        <nav>
-            <p>Навигация</p>
-            <ul>
-                <li><a href="#section1">Навигационная ссылка</a></li>
-                <li><a href="#section2">Навигационная ссылка</a></li>
-                <li><a href="#section3">Навигационная ссылка</a></li>
-                <li><a href="#section4">Навигационная ссылка</a></li>
+        <nav class="header__nav">
+            <p class="nav__title">Навигация</p>
+            <ul class="nav__list">
+                <li class="nav__item nav__item--active"><a class="nav__link" href="#features">Преимущества кофе</a></li>
+                <li class="nav__item nav__item--active"><a class="nav__link" href="#products">Товары</a></li>
+                <li class="nav__item nav__item--active"><a class="nav__link" href="#giftset">Подарочный набор</a></li>
+                <li class="nav__item nav__item--active"><a class="nav__link" href="#related-products">Дополнительные товары</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="section1">
-        <h2>Преимущества кофе</h2>
-        <div>
-            <article>
-                <img src="assets/icons/mag.png" alt="Иконка магазин">
+    <section id="features" class="features">
+        <h2 class="features__title">Преимущества кофе</h2>
+        <div class="features__cards">
+            <article class="features__article">
+                <img class="features__img" src="assets/icons/mag.png" alt="Иконка магазин">
                 <h3>Заголовок уровня 3</h3>
                 <p>Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что высокотехнологичная концепция общественного уклада позволяет
                      оценить значение своевременного выполнения сверхзадачи. Безусловно, разбавленное изрядной долей эмпатии, рациональное 
                      мышление предоставляет широкие возможности для системы массового участия.</p>
             </article>
         
-            <article>
-                <img src="assets/icons/baens.png" alt="Иконка кофейные зерна">
+            <article class="features__article">
+                <img class="article__img" src="assets/icons/baens.png" alt="Иконка кофейные зерна">
                 <h3>Заголовок уровня 3</h3>
                 <p>Есть над чем задуматься: действия представителей оппозиции указаны как претенденты на&nbsp;роль ключевых факторов. 
                     Предварительные выводы неутешительны: существующая теория позволяет оценить значение поставленных обществом задач.</p>
             </article>
      
-            <article>
-                <img src="assets/icons/baens_pack.png" alt="Иконка кофейные зерна несколько упаковок">
+            <article class="features__article">
+                <img class="article__img" src="assets/icons/baens_pack.png" alt="Иконка кофейные зерна несколько упаковок">
                 <h3>Заголовок уровня 3</h3>
                 <p>В&nbsp;целом, конечно, реализация намеченных плановых заданий позволяет оценить значение системы обучения кадров,
                      соответствующей насущным потребностям. Не&nbsp;следует, однако, забывать, что повышение уровня гражданского сознания, а&nbsp;также свежий взгляд на&nbsp;
                     привычные вещи&nbsp;&mdash; безусловно открывает новые горизонты для глубокомысленных рассуждений.</p>
             </article>
     
-            <article>
-                <img src="assets/icons/mash.png" alt="Иконка кофемашины">
+            <article class="features__article">
+                <img class="article__img" src="assets/icons/mash.png" alt="Иконка кофемашины">
                 <h3>Заголовок уровня 3</h3>
                 <p>Следует отметить, что повышение уровня гражданского сознания не&nbsp;оставляет шанса для инновационных методов управления процессами. 
                     Кстати, базовые сценарии поведения пользователей объявлены нарушающими общечеловеческие нормы этики и&nbsp;морали. Ясность нашей позиции 
@@ -57,68 +59,68 @@
         </div>
     </section>
 
-    <section id="section2">
-        <h2>Самое лучшее</h2>
-        <div>
-            <article>
+    <section id="products" class="products">
+        <h2 class="products__title">Товары</h2>
+        <div class="products__cards">
+            <article class="products__article">
                 <div>
                     <img src="assets/img/coffee_1.png" alt="Изображение Кофе 1">
                 </div>
                 <div>
-                    <p>99.000</p>
+                    <p class="cards__cost">99.000</p>
                     <h3>Кофе 1</h3>
                     <p>Но&nbsp;непосредственные участники технического прогресса будут разоблачены.</p>
                     <div>
-                        <button>Кнопка1</button>
-                        <button>Кнопка2</button>
+                        <button class="cards__button1 cards__button1--hover">Кнопка1</button>
+                        <button class="cards__button2 cards__button2--hover">Кнопка2</button>
                     </div>
                 </div>
             </article>
 
-            <article>
+            <article class="products__article">
                 <div>
                     <img src="assets/img/coffee_2.png" alt="Изображение Кофе 2">
                 </div>
                 <div>
-                    <p>139.000</p>
+                    <p class="cards__cost">139.000</p>
                     <h3>Кофе 2</h3>
                     <p>Однозначно, акционеры крупнейших компаний представляют собой не&nbsp;что иное, 
                         как квинтэссенцию победы маркетинга над разумом и&nbsp;должны быть подвергнуты целой серии независимых исследований.</p>
                     <div>
-                        <button>Кнопка1</button>
-                        <button>Кнопка2</button>
+                        <button class="cards__button1 cards__button1--hover">Кнопка1</button>
+                        <button class="cards__button2 cards__button2--hover">Кнопка2</button>
                     </div>
                 </div>
             </article>
 
-            <article>
+            <article class="products__article">
                 <div>
                     <img src="assets/img/coffee_3.png" alt="Изображение Кофе 3">
                 </div>
                 <div>
-                    <p>85.000</p>
+                    <p class="cards__cost">85.000</p>
                     <h3>Кофе 3</h3>
                     <p>В&nbsp;своём стремлении улучшить пользовательский опыт мы&nbsp;упускаем, что элементы
                          политического процесса и&nbsp;по&nbsp;сей день остаются уделом либералов, которые жаждут 
                          быть в&nbsp;равной степени предоставлены сами себе.</p>
                     <div>
-                        <button>Кнопка1</button>
-                        <button>Кнопка2</button>
+                        <button class="cards__button1 cards__button1--hover">Кнопка1</button>
+                        <button class="cards__button2 cards__button2--hover">Кнопка2</button>
                     </div>
                 </div>
             </article>
 
-            <article>
+            <article class="products__article">
                 <div>
                     <img src="assets/img/coffee_4.png" alt="Изображение Кофе 4">
                 </div>
                 <div>
-                    <p>75.000</p>
+                    <p class="cards__cost">75.000</p>
                     <h3>Кофе 4</h3>
                     <p>Значимость этих проблем настолько очевидна, что синтетическое тестирование говорит о&nbsp;возможностях укрепления моральных ценностей.</p>
                     <div>
-                        <button>Кнопка1</button>
-                        <button>Кнопка2</button>
+                        <button class="cards__button1 cards__button1--hover">Кнопка1</button>
+                        <button class="cards__button2 cards__button2--hover">Кнопка2</button>
                     </div>
                 </div>
             </article>
@@ -126,51 +128,51 @@
         </div>
     </section>
 
-    <section id="section3">
-        <h2>Подарочные наборы</h2>
-        <article>
+    <section id="giftset" class="giftset">
+        <h2 class="section__title">Подарочные наборы</h2>
+        <article class="giftset__card">
             <div>
-                <img src="assets/img/coffee_giftset.png" alt="Изображение подарочного набора">
+                <img class="giftset-card__img" src="assets/img/coffee_giftset.png" alt="Изображение подарочного набора">
             </div>
-            <div>
-                <p>285.000</p>
-                <h3>Подарочный набор кофе</h3>
+            <div class="giftset-card__description">
+                <p class="cards__cost">285.000</p>
+                <h3>Подарочный набор</h3>
                 <p>Сложно сказать, почему базовые сценарии поведения пользователей объявлены нарушающими общечеловеческие 
                     нормы этики и&nbsp;морали. Предварительные выводы неутешительны: сложившаяся структура организации напрямую 
                     зависит от&nbsp;экспериментов, поражающих по&nbsp;своей масштабности и&nbsp;грандиозности. Являясь всего лишь 
                     частью общей картины, элементы политического процесса представляют собой не&nbsp;что иное, как квинтэссенцию победы
                      маркетинга над разумом и&nbsp;должны быть представлены в&nbsp;исключительно положительном свете.</p>
-                <div>
+                <div class="giftset-card__icons">
                     <div>
                         <img src="assets/icons/IC_coffee.png" alf="Иконка зёрен">
                     </div>
                     <div>
                         <p>Зёрна</p>
-                        <p>В&nbsp;целом, конечно, выбранный нами инновационный путь выявляет срочную потребность инновационных методов управления процессами.</p>
+                        <p class="giftset-card-icons__description">В&nbsp;целом, конечно.</p>
                     </div>
                     <div>
                         <img src="assets/icons/IC_Mountain.png" alf="Иконка горы">
                     </div>
                     <div>
                         <p>Горы</p>
-                        <p>Есть над чем задуматься: ключевые особенности структуры проекта подвергнуты целой серии независимых исследований.</p>
+                        <p class="giftset-card-icons__description">Есть над чем задуматься.</p>
                     </div>
                 </div>
 
-                <div>
-                    <button>Кнопка1</button>
-                    <button>Кнопка2</button>
+                <div class="giftset-card__buttons">
+                    <button class="giftset-card__button1 giftset-card__button1--hover">Кнопка1</button>
+                    <button class="giftset-card__button2 giftset-card__button2--hover">Кнопка2</button>
                 </div>
             </div>
         </article>
     </section>
     
-    <section id="section4">
-        <h2>Кофейные комбо</h2>
-        <div>
-            <article>
-                <img src="assets/img/coffee_cup_1.png" alt="Изображение кофейного комбо 1">
-                <p>147.000</p>
+    <section id="related-products" class="related-products">
+        <h2 class="section__title">Дополнительные товары</h2>
+        <div class="related-products__cards">
+            <article class="related-products__card">
+                <img class="related-products__img" src="assets/img/coffee_cup_1.png" alt="Изображение кофейного комбо 1">
+                <p class="cards__cost">147.000</p>
                 <h3>Кофейное комбо 1</h3>
                 <p>
                     Безусловно, перспективное планирование обеспечивает широкому кругу (специалистов) участие в&nbsp;формировании поэтапного и&nbsp;последовательного развития общества.
@@ -180,14 +182,14 @@
                     рассмотрены исключительно в&nbsp;разрезе маркетинговых и&nbsp;финансовых предпосылок.
                 </p>
                 <div>
-                    <button>Кнопка1</button>
-                    <button>Кнопка2</button>
+                    <button class="cards__button1 cards__button1--hover">Кнопка1</button>
+                    <button class="cards__button2 cards__button2--hover">Кнопка2</button>
                 </div>                
             </article>
 
-            <article>
-                <img src="assets/img/coffee_cup_2.png" alt="Изображение кофейного комбо 2">
-                <p>156.000</p>
+            <article class="related-products__card">
+                <img class="related-products__img" src="assets/img/coffee_cup_2.png" alt="Изображение кофейного комбо 2">
+                <p class="cards__cost">156.000</p>
                 <h3>Кофейное комбо 2</h3>
                 <p>
                     Как принято считать, предприниматели в&nbsp;сети интернет набирают популярность среди определенных слоев населения, 
@@ -195,14 +197,14 @@
                     что понимание сути ресурсосберегающих технологий способствует повышению качества распределения внутренних резервов и&nbsp;ресурсов.
                 </p>
                 <div>
-                    <button>Кнопка1</button>
-                    <button>Кнопка2</button>
+                    <button class="cards__button1 cards__button1--hover">Кнопка1</button>
+                    <button class="cards__button2 cards__button2--hover">Кнопка2</button>
                 </div>                
             </article>
             
-            <article>
-                <img src="assets/img/coffee_cup_3.png" alt="Изображение кофейного комбо 3">
-                <p>275.000</p>
+            <article class="related-products__card">
+                <img class="related-products__img" src="assets/img/coffee_cup_3.png" alt="Изображение кофейного комбо 3">
+                <p class="cards__cost">275.000</p>
                 <h3>Кофейное комбо 3</h3>
                 <p>
                     Повседневная практика показывает, что современная методология разработки играет важную роль
@@ -212,14 +214,14 @@
                     внутренней структуры обеспечивает актуальность существующих финансовых и&nbsp;административных условий.
                 </p>
                 <div>
-                    <button>Кнопка1</button>
-                    <button>Кнопка2</button>
+                    <button class="cards__button1 cards__button1--hover">Кнопка1</button>
+                    <button class="cards__button2 cards__button2--hover">Кнопка2</button>
                 </div>                
             </article>
         </div>
     </section>
 
-    <footer>
+    <footer class="footer">
         <p>Предварительные выводы неутешительны: высококачественный прототип будущего проекта не&nbsp;оставляет шанса для кластеризации усилий.</p>
     </footer>
 </body>
